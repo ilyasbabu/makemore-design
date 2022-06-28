@@ -15,7 +15,7 @@
 <body>
     <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
     <!-- navbar -->
-    <nav class="z-0 relative" x-data="{open:false,menu:false, lokasi:false}">
+    <nav class="z-50 top-0 sticky" x-data="{open:false,menu:false, lokasi:false}">
         <div class="relative z-10 bg-slate-900 shadow text-white">
             <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
@@ -33,16 +33,16 @@
                         <div class="hidden lg:block lg:ml-2">
                             <div class="flex">
                                 <a href="#"
-                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
+                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
                                     Offers </a>
                                 <a href="#"
-                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
+                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
                                     Referrals </a>
                                 <a href="#"
-                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
+                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
                                     Wallet </a>
-                                <a href="#"
-                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
+                                <a href="login.html"
+                                    class="ml-4 px-3 py-2 rounded-md text-sm leading-5 text-gray-300 font-semibold hover:bg-slate-700 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 ">
                                     Profile </a>
                             </div>
                         </div>
@@ -86,16 +86,16 @@
             <div x-show="menu" class="block md:hidden">
                 <div class="px-2 pt-2 pb-3">
                     <a href="#"
-                        class="mt-1 block px-3 py-2 rounded-md text-white font-semibold font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Offers
+                        class="mt-1 block px-3 py-2 rounded-md text-white font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Offers
                     </a>
                     <a href="#"
-                        class="mt-1 block px-3 py-2 rounded-md text-white font-semibold font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Referrals
+                        class="mt-1 block px-3 py-2 rounded-md text-white font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Referrals
                     </a>
                     <a href="#"
-                        class="mt-1 block px-3 py-2 rounded-md text-white font-semibold font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Wallet
+                        class="mt-1 block px-3 py-2 rounded-md text-white font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Wallet
                     </a>
-                    <a href="#"
-                        class="mt-1 block px-3 py-2 rounded-md text-white font-semibold font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Profile
+                    <a href="login.html"
+                        class="mt-1 block px-3 py-2 rounded-md text-white font-medium hover:bg-gray-800 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Profile
                     </a>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
+                    <!-- <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
                         <div class="col-span-2 row-span-4">
                             <img src="https://picsum.photos/200/300?grayscale" class="rounded-full" width="640"
                                 height="960" alt="random image" loading="eager">
@@ -140,7 +140,7 @@
                                 class="w-full h-full object-cover object-top rounded-xl" width="640" height="427"
                                 alt="random image" loading="eager">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -282,7 +282,7 @@
 
 
 
-    <footer class="bg-gradient-to-r from-gray-100 via-[#ffffff] to-gray-200 drop-shadow-2xl shadow shadow-2xl">
+    <footer class="bg-gradient-to-r from-gray-100 via-[#ffffff] to-gray-200 drop-shadow-2xl shadow-2xl">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
@@ -290,8 +290,9 @@
                     <p class="max-w-xs mt-4 text-sm text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
                     </p>
-                    <div class="flex mt-8 space-x-6 text-gray-600">
-                        <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                    <div class="flex mt-8 space-x-6 ">
+                        <a class="hover:opacity-75 text-gray-600 hover:text-blue-800" href target="_blank"
+                            rel="noreferrer">
                             <span class="sr-only"> Facebook </span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd"
@@ -299,7 +300,8 @@
                                     clipRule="evenodd" />
                             </svg>
                         </a>
-                        <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                        <a class="hover:opacity-75 text-gray-600 hover:text-pink-500" href target="_blank"
+                            rel="noreferrer">
                             <span class="sr-only"> Instagram </span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd"
@@ -307,14 +309,16 @@
                                     clipRule="evenodd" />
                             </svg>
                         </a>
-                        <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                        <a class="hover:opacity-75 text-gray-600 hover:text-blue-500" href target="_blank"
+                            rel="noreferrer">
                             <span class="sr-only"> Twitter </span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
                                     d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                             </svg>
                         </a>
-                        <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                        <a class="hover:opacity-75 text-gray-600 hover:text-black" href target="_blank"
+                            rel="noreferrer">
                             <span class="sr-only"> GitHub </span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd"
@@ -322,11 +326,11 @@
                                     clipRule="evenodd" />
                             </svg>
                         </a>
-                        <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                        <a class="hover:opacity-75 text-gray-600 hover:text-red-700" href target="_blank" rel="noreferrer">
                             <span class="sr-only"> Dribbble </span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 512 512" aria-hidden="true">
                                 <path fillRule="evenodd"
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                    d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"
                                     clipRule="evenodd" />
                             </svg>
                         </a>
@@ -353,7 +357,6 @@
                             <a class="hover:opacity-75" href> Company Review </a>
                             <a class="hover:opacity-75" href> Accounts Review </a>
                             <a class="hover:opacity-75" href> HR Consulting </a>
-                            <a class="hover:opacity-75" href> SEO Optimisation </a>
                         </nav>
                     </div>
                     <div>
